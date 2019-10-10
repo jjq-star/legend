@@ -1,0 +1,56 @@
+.footer {
+	flex-shrink: 0;
+	height: 1.1rem;
+	background-color: white;
+	display: flex;
+	box-sizing: border-box;
+	padding: 0.2rem 0.1rem;
+}
+.footer.hide { display: none; }
+.footer>* {
+	line-height: 0.7rem;
+	font-size: 0.32rem;
+	text-align: center;
+}
+.footer>span.all {
+	font-size: 0.31rem;
+	display: flex;
+	align-items: center;
+}
+.footer>span.all>* { vertical-align: middle; }
+.footer>span.account-wrapper {
+	flex-grow: 1;
+	text-align: right;
+	box-sizing: border-box;
+	padding:0 0.4rem;
+	color: #bf1111;
+}
+.footer>span.account-wrapper>em.account {
+	font-style: normal;
+}
+.footer>button {
+	width: 1.6rem;
+	outline: none;
+	background-color: rgb(191, 17, 17);
+	border-radius: 0.5rem;
+	color: #fff;
+}
+.footer>button.disabled {
+	border: 1px solid white;
+	background-color: #ecece8;
+}
+.footer>button>em.total { font-style: normal; }
+.footer-edit { justify-content: space-between; }
+i.checkbox {
+	display: inline-block;
+	width: 0.38rem;
+	height: 0.38rem;
+	background: url(icon_checkbox_uncheck.png) no-repeat center center;
+	border-radius: 50%;
+	border: 2px solid #ccc;
+	margin-right: 0.2rem;
+}
+i.checked {
+	background: url(icon_checkbox_check.png) no-repeat center center;
+}
+

@@ -1,0 +1,15 @@
+ul.main-list { }
+ul.main-list>li{ padding: 0.26rem 0; }
+ul.main-list>li.active>span{
+	color: #845f3f;
+	border-left: 3px solid #845f3f;
+}
+ul.main-list>li>span{
+	display: block;
+	font-size: 0.24rem;
+	height: 0.48rem;
+	line-height: 0.48rem;
+	text-align: center;
+	color: #333;
+	border-left: 3px solid transparent;
+}

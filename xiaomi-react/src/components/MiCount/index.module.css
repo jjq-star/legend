@@ -1,0 +1,13 @@
+.mi-count {  }
+.mi-count>* {
+	display: inline-block;
+	width: 0.52rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	text-align: center;
+	font-size: 0.26rem;
+	background-color: transparent;
+}
+.mi-count>button:before { color: black; }
+.mi-count>button.disabled:before { color: #b0b0b0; }
+.mi-count>span.count {  background-color: rgb(244,244,244); }

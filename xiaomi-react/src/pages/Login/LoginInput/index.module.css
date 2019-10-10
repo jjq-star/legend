@@ -1,0 +1,14 @@
+.login-input {
+	display: flex;
+	align-items: center;
+	height: 1.1rem;
+	border-bottom: 1px solid #d3d3d3;
+}
+.login-input>input {
+	flex-grow: 1;
+	border: 0;
+	outline: none;
+	font-size: 0.28rem;
+	color: #4a4a4a;
+}
+.login-input>input::-webkit-input-placeholder {  color: rgb(153,153,153); }

@@ -1,0 +1,13 @@
+.cart-header {
+	height: 0.9rem;
+	position: relative;
+}
+.cart-header * { height: 0.9rem; line-height: 0.9rem; display: block; text-align: center; color: black; }
+.cart-header>h1 { font-size: 0.36rem; font-weight: normal;}
+.left,.right {
+	position: absolute;
+	top: 0;
+}
+.left { left: 0; }
+.right { right: 0; width: 0.9rem;}
+.left>a { font-size: 0.4rem; }

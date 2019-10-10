@@ -1,0 +1,110 @@
+.content {
+	flex-grow: 1;
+	overflow:hidden;
+	padding: 0.2rem;
+	background-color: #fff;
+	-webkit-transform: translate3d(0,0,0);
+}
+.content-wrapper {
+	overflow: hidden;
+	touch-action: pan-y;
+}
+
+.content-wrapper>ul>li>a>.avatar-wrapper {
+	position: relative;
+	background-color: rgba(0,0,0,0.08);
+	border-radius: 0.1rem;
+}
+.content-wrapper>ul>li>a>.avatar-wrapper>img.avatar {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 80%;
+}
+.content-wrapper>ul>li>a>.item-detail {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+.content-wrapper>ul>li>a>.item-detail>h3 {
+	color: #333;
+	font-size: 0.3rem;
+	font-weight: normal;
+	margin: 0.2rem 0.1rem;
+	padding: 0 0.08rem;
+}
+.content-wrapper>ul>li>a>.item-detail>p {
+	color: #999;
+	font-size: 0.26rem;
+	padding: 0 0.08rem;
+}
+.content-wrapper>ul>li>a>.item-detail>span.price {
+	display: block;
+	color: #860909;
+	font-size: 0.32rem;
+	margin: 0.1rem 0;
+	padding: 0 0.08rem;
+}
+.content-wrapper>ul>li>a>.item-detail>span.sale {
+	position: absolute;
+	right: 0.08rem;
+	bottom: 0.14rem;
+	padding: 0 0.2rem;
+	color: #999;
+	background-color: rgba(0,0,0,0.05);
+}
+
+ul.card { margin-right: -0.22rem; }
+ul.card>li {
+	float: left;
+	width: 50%;
+	padding-right: 0.22rem;
+	box-sizing: border-box;
+	margin-bottom: 0.22rem;
+}
+ul.card>li>a {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background-color: white;
+	border-radius: 0.08rem;
+}
+ul.card>li>a>.avatar-wrapper {
+	width: 100%;
+	height: 0;
+	padding-top: 100%;
+}
+
+ul.list {}
+ul.list>li { padding: 0.2rem 0; display: flex; }
+ul.list>li>a { }
+ul.list>li>a>.avatar-wrapper {
+	width: 2.52rem;
+	height:  2.52rem;
+	flex-shrink: 0;
+}
+ul.list>li>a>.item-detail {
+	flex-grow: 1;
+	margin-left: 0.2rem;
+}
+
+.info {
+	height: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #666;
+}
+.info>i {
+	font-size: 0.24rem;
+	margin-right: 0.1rem;
+}
+.info>i.loading {
+	width: 0.3rem;
+	height: 0.3rem;
+	background-position: center center;
+	background-size: 130% 130%;
+}
+

@@ -1,0 +1,27 @@
+.right-wrapper{
+	overflow: hidden;
+}
+.right-wrapper>img{
+	width: 100%;
+}
+.right-wrapper>ul{
+	margin-right: -0.6rem;
+}
+.right-wrapper>ul>li{
+	width: 33.333333%;
+	float: left;
+	box-sizing: border-box;
+	padding-right: 0.6rem;
+	margin-bottom: 0.6rem;
+}
+.right-wrapper>ul>li>a{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.right-wrapper>ul>li>a>img{
+	width: 100%;
+}
+.right-wrapper>ul>li>a>span{
+	text-align: center;
+}

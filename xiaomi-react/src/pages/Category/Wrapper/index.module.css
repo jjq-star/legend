@@ -1,0 +1,33 @@
+.page-wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height:100%;
+}
+.header {
+	flex-shrink: 0;
+	height: 0.9rem;
+}
+.content {
+	flex-grow: 1;
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	display: flex;
+	overflow: hidden;
+	/*不想因为子元素变高我就变高*/
+}
+.content>.left {
+	width: 1.5rem;
+	flex-shrink: 0;
+	overflow: auto;
+}
+.content>.right {
+	flex-grow: 1;
+	border-left: 1px solid #ccc;
+	padding: 0.3rem;
+	overflow: auto;
+}
+.footer {
+	flex-shrink: 0;
+	height: 1rem;
+}

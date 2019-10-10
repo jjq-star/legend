@@ -1,0 +1,95 @@
+/* 头部样式*/
+.top {
+	flex-shrink: 0;
+	height: 0.9rem;
+	position: relative;
+}
+.top>* {
+	line-height: 0.9rem;
+	height: 0.9rem;
+	text-align: center;
+	font-size: 0.3rem;
+}
+.top>h1.title {
+	font-weight: normal;
+	font-size: 0.32rem;
+}
+.top>a {
+	position: absolute;
+	top: 0;
+	width: 0.9rem;
+	font-size: 0.4rem;
+	font-weight: bold;
+}
+.top>a.back { left: 0; }
+.top>a.sort { right: 0; }
+.top>a.toggle { right: 0.9rem; }
+/*二级列表样式*/
+.sub-list {
+	flex-shrink: 0;
+	border-bottom: 1px solid #b0b0b0;
+	box-sizing: border-box;
+}
+.sub-list>ul {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow: auto;
+	margin-bottom: -1px;
+}
+.sub-list>ul>li {
+	flex-shrink: 0;
+	display: flex;
+	margin-right: 0.14rem;
+}
+.sub-list>ul>li>a {
+	height: 0.72rem;
+	line-height: 0.72rem;
+	display: block;
+	padding: 0 0.3rem;
+	color: #333;
+	font-size: 0.28rem;
+	border-bottom: 0.06rem solid transparent;
+}
+.sub-list>ul>li>a.active {
+	color: rgb(159,128,82);
+	border-bottom-color: rgb(159,128,82);
+}
+/* 弹层样式 */
+.filter-dialog {
+	padding: 0.3rem 0.2rem 1rem;
+}
+.filter-dialog>.header {
+	display: flex;
+	align-items: center;
+	height: 1rem;
+}
+.filter-dialog>.header i {
+	font-size: 0.36rem
+}
+.filter-dialog>.header>span {
+	display: flex;
+	align-items: center;
+	padding: 0 0.2rem;
+	font-size: 0.26rem;
+}
+.filter-dialog>.header>span.active {
+	color: #bf1111;
+}
+.filter-dialog>.header>span>i {
+	margin-left: -0.06rem
+}
+.filter-dialog>.header>input {
+	height: 0.7rem;
+	flex-grow: 1;
+	margin: 0 0.2rem;
+	font-size: 0.24rem;
+	text-align: left;
+	text-indent: 1em;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #b0b0b0;
+}
+.filter-dialog>.header>.search {
+	width: 1rem;
+	font-size: 0.36rem;
+}
