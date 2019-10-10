@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="../assets/webREM.js"></script>
+		<link rel="stylesheet" href="/assets/reset.css">
+		<link rel="stylesheet" href="../detail/iconfont.css">
+		<link rel="stylesheet" href="iconfont.css">
+		<link rel="stylesheet" href="index.css">
+		<title>地址</title>
+	</head>
+	<body>
+		<div class="header">
+			<a href="#" class="normal-back iconfont icon-back" onclick="history.back()"></a>
+			<a href="#" class="edit-back iconfont icon-back"></a>
+			<h1 class="title"></h1>
+			<button type="button" class="btn-delete">删除</button>
+		</div>
+		<div class="content address-normal">
+			<ul class="address-list">
+				<div class="null">
+					<img src="images/address.png" alt="">
+					<p>您还没有收货地址，请点击下方 + 新建</p>
+				</div>
+			</ul>
+			<button type="button" class="btn-edit btn-add">+ 添加地址</button>
+		</div>
+		<div class="content address-edit hide">
+			<form action="">
+				<ul>
+					<li>
+						<label for="name">收货人姓名</label>
+						<input id="name" type="text" name="receiveName" placeholder="请输入姓名" class="receive-name" />
+					</li>
+					<li>
+						<label for="tel">手机号码</label>
+						<input id="tel" type="text" name="receiveTel" placeholder="请输入手机号" class="receive-tel" />
+					</li>
+					<li class="region">
+						<label for="">所在地区</label>
+						<input readonly="readonly" id="" type="text" name="receiveAddress"  class="receive-address" />
+						<i class="iconfont icon-arrow-down"></i>
+					</li>
+					<li>
+						<label for="street">街道地址</label>
+						<input id="street" type="text" name="receiveAddressDetail" placeholder="请输入街道地址" class="receive-detail" />
+					</li>
+				</ul>
+			</form>
+			<button type="button" class="btn-edit btn-save">保存并使用</button>
+		</div>
+		<!-- 地址弹窗 -->
+		<div class="region-dialog-wrapper">
+			<div class="region-dialog">
+				<h3 class="title">所在地区</h3>
+				<i class="iconfont icon-close"></i>
+				<p class="region-cur">请选择</p>
+				<ul class="region-list"></ul>
+			</div>
+		</div>
+		<script src="/assets/jquery-3.4.1.min.js"></script>
+		<script src="/assets/http.js"></script>
+		<script src="regions.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>

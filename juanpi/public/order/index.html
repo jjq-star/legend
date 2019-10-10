@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="../assets/webREM.js"></script>
+		<link rel="stylesheet" href="/assets/reset.css">
+		<link rel="stylesheet" href="/list/iconfont.css">
+		<link rel="stylesheet" href="/cart/iconfont.css">
+		<link rel="stylesheet" href="index.css">
+		<title>订单</title>
+	</head>
+	<body>
+		<div class="page-wrapper">
+			<div class="header">
+				<a href="#" onclick="history.back()" class="back iconfont icon-back"></a>
+				<h1 class="title">订单确认</h1>
+			</div>
+			<div class="address">
+				<a href="/address/index.html">
+					<img class="address" src="images/address.png" alt="">
+					<span>请填写收货地址</span>
+					<i></i>
+				</a>
+			</div>
+			<div class="product">
+				<ul></ul>
+			</div>
+			<div class="pay">
+				<ul>
+					<li>支付方式</li>
+					<li>
+						<img src="images/wx.png" alt="">
+						<span>微信支付</span>
+						<i class="active iconfont icon-select"></i>
+					</li>
+					<li>
+						<img src="images/ali.png" alt="">
+						<span>支付宝支付</span>
+						<i class="iconfont icon-select"></i>
+					</li>
+				</ul>
+			</div>
+			<div class="footer">
+				<span class="money">应付金额：<em class="total"></em></span>
+				<button class="btn-pay" type="button">去付款</button>
+			</div>
+		</div>
+		<script src="/assets/jquery-3.4.1.min.js"></script>
+		<script src="/assets/http.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>

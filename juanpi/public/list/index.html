@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="../assets/webREM.js"></script>
+		<link rel="stylesheet" href="/assets/reset.css">
+		<link rel="stylesheet" href="iconfont.css">
+		<link rel="stylesheet" href="index.css">
+		<script>window.PointerEvent = undefined;</script>
+		<meta charset="utf-8">
+		<title>列表</title>
+	</head>
+	<body>
+		<div class="list-wrapper">
+			<div class="header-wrapper">
+				<div class="header">
+					<span class="back iconfont icon-back" onclick="history.back()"></span>
+					<span class="list-title"></span>
+					<a href="#" class="search">
+						<span class="iconfont icon-seach"></span>
+						<button type="button" class="iconfont icon-more"></button>
+						<div class="more-popup">
+							<ul>
+								<li><a href="/home/index.html">首页</a></li>
+								<li><a href="/home/index.html">个人中心</a></li>
+								<li><a href="/home/index.html">我的订单</a></li>
+							</ul>
+						</div>
+					</a>
+				</div>
+				<div class="list-nav">
+					<ul>
+						<li>
+							<span data-order-col='recommend' data-order-dir='ASC' class="active asc">推荐</span>
+						</li>
+						<li>
+							<span data-order-col='price' data-order-dir='ASC' class="asc">价格</span>
+							<i class="iconfont icon-sort-up"></i>
+							<i class="active iconfont icon-sort-down"></i>
+						</li>
+						<li>
+							<span data-order-col='sale' data-order-dir='ASC' class="asc">销量</span>
+							<i class="iconfont icon-sort-up"></i>
+							<i class="active iconfont icon-sort-down"></i>
+						</li>
+						<li>
+							<span data-order-col='hot'>热卖</span>
+							<!-- <i class="iconfont icon-sort-up"></i>
+							<i class="active iconfont icon-sort-down"></i> -->
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="content scroll-wrapper">
+				<div class="scroll">
+					<ul></ul>
+					<p class="info">上拉加载...</p>
+				</div>
+			</div>
+		</div>
+		<script src="/assets/jquery-3.4.1.min.js"></script>
+		<script src="/assets/iscroll-probe.js"></script>
+		<script src="/assets/imagesloaded.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>

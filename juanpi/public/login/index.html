@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="../assets/webREM.js"></script>
+		<link rel="stylesheet" href="/assets/reset.css">
+		<link rel="stylesheet" href="index.css">
+		<title>登录</title>
+	</head>
+	<body>
+		<div class="login">
+			<div class="title">
+				<a href="#" class="login-back" onclick="history.back()">
+					<img src="images/login.png">
+				</a>
+				<span>登录</span>
+				<a href="/register/index.html" class="register">注册</a>
+			</div>
+			<div class="login-form">
+				<div class="login-way">
+					<span class="login-account active">卷皮账号登录</span>
+					<span class="login-phone">手机快捷登录</span>
+				</div>
+				<div class="login-wrapper active">
+					<div class="login-write account">
+						<div class="input-account">
+							<input type="text" placeholder="邮箱/用户名" class="name">
+						</div>
+						<div class="input-pwd">
+							<input type="password" placeholder="请输入密码" class="pwd">
+						</div>
+					</div>
+					<button type="button" class="btn-account">登录</button>
+				</div>
+				<div class="login-wrapper">
+					<div class="login-write phone">
+						<div class="input-phone">
+							<input type="text" placeholder="请输入手机号" class="phones">
+						</div>
+						<div class="input-code">
+							<input type="password" placeholder="请输入验证码">
+							<span class="code">获取验证码</span>
+						</div>
+					</div>
+					<button type="button" class="btn-code">登录</button>
+				</div>
+				<div class="login-option">
+					<span><i class="active"><img src="images/label.png"></i>两周内免登陆</span>
+					<p>忘记密码？</p>
+				</div>
+				<div class="login-other">
+					<h3>第三方账号快速登录</h3>
+					<div class="other-ways">
+						<a href="#">
+							<img src="images/tencent.png">
+						</a>
+						<a href="#">
+							<img src="images/taobao.png">
+						</a>
+						<a href="#">
+							<img src="images/sina.png">
+						</a>
+					</div>
+				</div>
+				<div class="footer">
+					<ul>
+						<li>
+							<img src="images/unexpress.png" alt="">
+							<span>全场包邮</span>
+						</li>
+						<li>
+							<img src="images/search.png" alt="">
+							<span>100%人工质检</span>
+						</li>
+						<li>
+							<img src="images/seven.png" alt="">
+							<span>7天放心退</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="/assets/jquery-3.4.1.min.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>

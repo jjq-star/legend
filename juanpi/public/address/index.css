@@ -1,0 +1,219 @@
+/* 页头开始 */
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 200;
+	width: 100%;
+	height: 1rem;
+	background-color: white;
+	border-bottom: 3px solid #ccc;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0 0.2rem;
+}
+.header>a {
+	width: 0.8rem;
+	flex-shrink: 0;
+	font-size: 0.4rem;
+	outline: none;
+	color: #333;
+}
+.header>a.normal-back {}
+.header>a.edit-back { display: none;}
+.header>h1.title {
+	flex-grow: 1;
+	font-weight: normal;
+	text-align: center;
+	font-size: 0.3rem;
+}
+.header>h1.title:before { content: '收货地址'; }
+.header>button.btn-delete {
+	flex-shrink: 0;
+	width: 0.8rem;
+	border: 0;
+	outline: none;
+	background-color: #fff;
+	font-size: 0.3rem;
+	visibility: hidden;
+}
+/* 进入编辑状态，新增地址 */
+.header.edit>a.normal-back { display: none;}
+.header.edit>a.edit-back { display: block;}
+.header.edit>h1.title:before { content: '新增地址'; }
+/* 进入编辑状态，修改地址 */
+.header.edit.update>h1.title:before { content: '修改地址'; }
+.header.edit.update>button.btn-delete { visibility: visible;}
+/* 页头结束 */
+.content {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding-top: 1rem;
+	padding-bottom: 0.2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.content.hide { display: none;}
+.content>ul { width: 100%; flex-grow: 1; }
+.content>ul>.null {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.content>ul>.null.hide{ display: none; }
+.content>ul>.null>img {}
+.content>ul>.null>p {
+	font-size: 0.32rem;
+	color: #ccc;
+	padding: 0.2rem 0;
+}
+ul.address-list {
+	overflow: auto;
+}
+ul.address-list>li {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	height: 1.4rem;
+	padding: 0.3rem 0.2rem 0.1rem;
+	border-bottom: 2px solid #999;
+}
+ul.address-list>li>p {
+	width: 50%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	box-sizing: border-box;
+	margin-bottom: 0.1rem;
+	font-size: 0.26rem;
+}
+ul.address-list>li>p.name {}
+ul.address-list>li>p.tel { text-align: right; }
+ul.address-list>li>p.address { width: 90%; margin: 0;}
+ul.address-list>li>a.btn-default {
+	height: 0.4rem;
+	line-height: 0.4rem;
+	box-sizing: border-box;
+	padding: 0 0.1rem;
+	margin-top: 0.1rem;
+	border: 1px solid #3DB4E7;
+	color: #3DB4E7;
+}
+ul.address-list>li>a.btn-default:before { content: '设为默认地址'; }
+ul.address-list>li>a.btn-default.default{ border: 1px solid #F60E0E; color: #F60E0E; }
+ul.address-list>li>a.btn-default.default:before { content: '默认地址'; }
+ul.address-list>li>i { font-size: 0.3rem; }
+form { width: 100%; flex-grow: 1; }
+form>ul {}
+form>ul>li {
+	display: flex;
+	height: 1rem;
+	line-height: 1rem;
+	padding: 0 0.3rem;
+	border-bottom: 1px solid #ccc;
+}
+form>ul>li>label {
+	width: 1.5rem;
+	font-size: 0.26rem;
+	color: black;
+}
+form>ul>li>input {
+	flex-grow: 1;
+	height: 1rem;
+	border: 0;
+	font-size: 0.26rem;
+	outline: none;
+}
+form>ul>li.region>i {
+	font-size: 0.4rem;
+}
+form>ul>li.region>input {
+	border-bottom: 1px solid #ccc;
+}
+button.btn-add {
+	flex-shrink: 0;
+	width: 90%;
+	height: 0.8rem;
+	background-color: white;
+	border: none;
+	border: 0.02rem solid rgb(132,95,63);
+	border-top: 0.02rem solid rgb(132,95,63);
+	border-radius: 0.2rem;
+	color: #845f3f;
+	outline: none;
+	font-size: 0.32rem;
+	margin-top: 0.2rem;
+}
+button.btn-save {
+	flex-shrink: 0;
+	width: 90%;
+	height: 0.8rem;
+	background-color: white;
+	border: none;
+	border: 0.02rem solid rgb(132,95,63);
+	border-top: 0.02rem solid rgb(132,95,63);
+	border-radius: 0.2rem;
+	color: #845f3f;
+	outline: none;
+	font-size: 0.32rem;
+}
+/* 地址弹窗 */
+.region-dialog-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+.region-dialog-wrapper.show {
+	display: block;
+}
+.region-dialog-wrapper>.region-dialog {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 70%;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+}
+.region-dialog-wrapper>.region-dialog>h3.title {
+	font-size: 0.26rem;
+	font-weight: normal;
+	text-align: center;
+	padding: 0.2rem 0;
+	flex-shrink: 0;
+}
+.region-dialog-wrapper>.region-dialog>i{
+	position: absolute;
+	top: 0.2rem;
+	right: 0.2rem;
+	font-size: 0.3rem;
+}
+.region-dialog-wrapper>.region-dialog>p.region-cur {
+	font-size: 0.28rem;
+	padding: 0 0.2rem;
+	color: #bf1111;
+	flex-shrink: 0;
+	padding-bottom: 0.2rem;
+	border-bottom: 1px solid #ccc;
+}
+.region-dialog-wrapper>.region-dialog>ul.region-list {
+	overflow: auto;
+	flex-grow: 1;
+}
+.region-dialog-wrapper>.region-dialog>ul.region-list>li {
+	height: 1rem;
+	line-height: 1rem;
+	padding: 0 0.2rem;
+	font-size: 0.24rem;
+	border-bottom: 1px solid #ccc;
+}

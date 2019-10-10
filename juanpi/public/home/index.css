@@ -1,0 +1,204 @@
+.page-wrapper {
+	padding-bottom: 1rem;
+	position: relative;
+}
+.page-wrapper>img {
+	position: fixed;
+	top: 11rem;
+	right: 0.2rem;
+	z-index: 10;
+	display: none;
+}
+.page-wrapper>img.active {
+	display: block;
+}
+/* 头部开始 */
+.header {
+	display: flex;
+	align-items: center;
+	height: 0.9rem;
+	padding-left: 0.2rem;
+}
+.header>a.header-left {
+	flex-grow: 1;
+	background-color: #f2f2f2;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	border-radius: 0.2rem;
+	padding: 0 0.2rem;
+	position: relative;
+	outline: none;
+}
+.header>a.header-left>img {
+	width: 0.5rem;
+	height: 0.5rem;
+}
+.header>a.header-left>span {
+	line-height: 0.5rem;
+}
+.header>a.header-left>span.name {
+	position: absolute;
+	top: 0.1rem;
+	left: 0.8rem;
+	transform: translateY(-15%);
+	color: #FF464E;
+}
+.header>a.header-left>span.search {
+	position: absolute;
+	top: 0.1rem;
+	left: 1.5rem;
+	transform: translateY(-15%);
+	color: #666;
+	
+}
+.header>a.header-right>img {
+	flex-shrink: 0;
+	width: 0.9rem;
+	height: 0.9rem;
+}
+/* 头部结束 */
+/* 轮播图 */
+.banner {
+	overflow-x: hidden;
+}
+.banner>ul {
+	display: flex;
+	width: 700%;
+	
+	touch-action: pan-x;
+}
+.banner>ul>li {
+	flex-grow: 1;
+}
+.banner>ul>li>img {
+	width: 100%;
+}
+/* 促销 */
+.promote {}
+.promote>.promote-top {}
+.promote>.promote-top>ul {
+	display: flex;
+}
+.promote>.promote-top>ul>li {
+	flex-grow: 1;
+}
+.promote>.promote-top>ul>li>a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.promote>.promote-top>ul>li>a>img {
+	width: 1.8rem;
+	height: 1.6rem;
+}
+.promote>.promote-center {
+	width: 100%;
+	height: 2rem;
+}
+.promote>.promote-center>img {
+	width: 100%;
+	height: 100%;
+}
+.promote>.promote-bottom {}
+.promote>.promote-bottom>.promote-bottom-up {
+	display: flex;
+}
+.promote>.promote-bottom>.promote-bottom-up>img {
+	width: 50%;
+}
+.promote>.promote-bottom>.promote-bottom-down {
+	display: flex;
+}
+.promote>.promote-bottom>.promote-bottom-down>img {
+	width: 33.3333%;
+}
+.praise {
+	background-color: #f4f4f4;
+	height: 1.4rem;
+	position: relative;
+}
+.praise>img {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 100%;
+	height: 0.95rem;
+}
+/* 内容 */
+.content {}
+.content>.title {
+	width: 100%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	box-sizing: border-box;
+	padding: 0 0.3rem;
+}
+.content>.title>span {
+	font-size: 0.28rem;
+	padding: 0.2rem;
+}
+.content>.title>span.active {
+	border-bottom: 3px solid #FF464E;
+	color: #FF464E;
+}
+.content>ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.content>ul>li {
+	width: 49.9%;
+	margin-bottom: 0.4rem;
+}
+.content>ul>li>a {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.content>ul>li>a>img {
+	width: 100%;
+	height: 100%;
+}
+.content>ul>li>a>img.august {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0.9rem;
+	height: 0.9rem;
+}
+.content>ul>li>a>.text {
+	padding: 0 0.2rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+.content>ul>li>a>.text>p.price {
+	font-size: 0.28rem;
+	color: #FF464E;
+	margin: 0.2rem 0;
+	width: 100%;
+}
+.content>ul>li>a>.text>span.name {
+	display: inline-block;
+	width: 70%;
+	font-size: 0.24rem;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	color: #333;
+}
+.content>ul>li>a>.text>span.days {
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+	font-size: 0.24rem;
+	color: #999;
+}
+iframe {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1rem;
+	background-color: #fff;
+}

@@ -1,0 +1,238 @@
+.page-wrapper{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+/* 头部开始 */
+.header{
+	height: 0.8rem;
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	padding: 0 0.2rem;
+}
+.header>span{
+	width: 0.8rem;
+	font-size: 0.4rem;
+}
+.header>h3{
+	flex-grow: 1;
+	text-align: center;
+	font-size: 0.4rem;
+	font-weight: normal;
+}
+.header>button{
+	width: 0.8rem;
+	border: 0;
+	background-color: white;
+	font-size: 0.3rem;
+	outline: none;
+}
+/* 头部结束 */
+.content{
+	flex-grow: 1;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 0 0.2rem;
+	overflow: auto;
+	/* background-color: #f4f4f4; */
+}
+.content>.null{
+	text-align: center;
+	display: none;
+}
+.content>.null>img{
+	padding: 0.4rem 0;
+}
+.content>.null>p{
+	font-size: 0.3rem;
+	padding: 0.1rem 0;
+}
+.content>.null>a>button{
+	width: 2rem;
+	height: 0.6rem;
+	background-color: #f4f4f4;
+	color: #FF464E;
+	font-size: 0.3rem;
+	border: 1px solid #FF464E;
+	outline: none;
+}
+.content>ul{
+	
+}
+.content>ul>li{
+	display: flex;
+	align-items: center;
+	padding: 0.32rem 0;
+	border-bottom: 1px solid #ccc;
+}
+.content>ul>li>span{
+	width: 0.4rem;
+	height: 0.4rem;
+	border-radius: 0.2rem;
+	background-color: white;
+	color: white;
+	font-size: 0.4rem;
+	text-align: center;
+	line-height: 0.4rem;
+	border: 1px solid #ccc;
+}
+.content>ul>li>span.checked{
+	background-color: #FF464E;
+}
+.content>ul>li>span.edit{
+	display: none;
+}
+.content>ul>li>img{
+	width: 1.8rem;
+	height: 1.8rem;
+	margin: 0 0.3rem;
+}
+.content>ul>li>.detail{
+	flex-grow: 1;
+	height: 1.8rem;
+	position: relative;
+}
+.content>ul>li>.detail>span.size{
+	color: #333;
+	font-size: 0.28rem;
+}
+.content>ul>li>.detail>h3{
+	font-size: 0.32rem;
+	margin-bottom: 0.2rem;
+}
+.content>ul>li>.detail>p{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-size: 0.32rem;
+	color: #FF5A61;
+}
+.content>ul>li>.detail>.product-number{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	line-height: 0.38rem;
+}
+.content>ul>li>.detail>.product-number>span{
+	display: inline-block;
+	width: 0.32rem;
+	height: 0.32rem;
+	background-color: rgba(200,200,200,0.3);
+	text-align: center;
+	line-height: 0.32rem;
+}
+.content>ul>li>.detail>.product-number>span.disable{
+	background-color: rgba(200,200,200,1)
+}
+.content>ul>li>.detail>.product-number>em{
+	font-style: normal;
+	display: inline-block;
+	width: 0.32rem;
+	height: 0.32rem;
+	text-align: center;
+	line-height: 0.32rem;
+	font-size: 0.3rem;
+	color: #FF464E;
+}
+/* 页脚开始 */
+.footer{
+	height: 1rem;
+	flex-shrink: 0;
+	display: none;
+}
+.footer.active{
+	display: block;
+}
+.footer>* {
+	line-height: 1rem;
+}
+.footer>div{
+	width: 2rem;
+	flex-shrink: 0;
+	margin-left: 0.2rem;
+	float: left;
+}
+.footer>div>* {
+	vertical-align: middle;
+}
+.footer>div>i{
+	display: inline-block;
+	width: 0.4rem;
+	height: 0.4rem;
+	border: 1px solid #ccc;
+	border-radius: 0.2rem;
+	line-height: 0.4rem;
+	font-size: 0.4rem;
+	text-align: center;
+	color: white;
+}
+.footer>div>i.checked{
+	border: 1px solid white;
+	background-color: #FF464E;
+}
+.footer>div>span{
+	font-size: 0.3rem;
+	margin-left: 0.1rem;
+}
+.footer>p{
+	flex-grow: 1;
+	font-size: 0.3rem;
+	text-align: right;
+	float: right;
+	color: #FF464E;
+}
+.footer>p>em{
+	font-style: normal;
+	color: #FF464E;
+}
+.footer.normal>span.shopping-cart{
+	font-size: 0.5rem;
+	position: relative;
+}
+.footer.normal>span.shopping-cart>em.numbers{
+	font-size: 0.26rem;
+	font-style: normal;
+	width: 0.4rem;
+	height: 0.4rem;
+	text-align: center;
+	line-height: 0.4rem;
+	position: absolute;
+	top: 0;
+	right: -0.2rem;
+	transform: translate(0, -50%);
+	border-radius: 50%;
+	background-color: #FF464E;
+	color: white;
+}
+.footer>button{
+	width: 2rem;
+	flex-shrink: 0;
+	border: 0;
+	background-color: #FF464E;
+	font-size: 0.36rem;
+	color: white;
+	float: right;
+	margin-left: 0.2rem;
+}
+.footer>button>em{
+	font-style: normal;
+}
+/* 页脚结束 */
+p.alert{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #FF5A61;
+	color: white;
+	font-size: 0.32rem;
+	padding: 0.1rem;
+}
+iframe{
+	width: 100%;
+	height: 1rem;
+	display: none;
+}

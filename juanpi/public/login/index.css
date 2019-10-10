@@ -1,0 +1,161 @@
+.login {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.title {
+	width: 100%;
+	height: 0.88rem;
+	background-color: #FF5A61;
+	display: flex;
+}
+.title a {
+	display: inline-block;
+	width: 0.9rem;
+	height: 0.9rem;
+}
+.title>a.login-back {
+	box-sizing: border-box;
+	padding: 0.2rem;
+}
+.title>a.login-back>img {
+	width: 100%;
+}
+.title>span {
+	flex-grow: 1;
+	font-size: 0.36rem;
+	color: white;
+	line-height: 0.88rem;
+	text-align: center;
+}
+.title>a.register {
+	font-size: 0.3rem;
+	color: white;
+	line-height: 0.9rem;
+}
+.login-form {
+	flex-grow: 1;
+	padding: 0.2rem;
+}
+.login-form>.login-way {
+	height: 0.88rem;
+	display: flex;
+}
+.login-form>.login-way span {
+	flex-grow: 1;
+	font-size: 0.3rem;
+	color: #999;
+	text-align: center;
+	line-height: 0.88rem;
+	box-sizing: border-box;
+	margin: 0 0.6rem;
+}
+.login-form>.login-way span.active {
+	color: #ff464e;
+	border-bottom: 4px solid #ff464e;
+}
+.login-form>.login-wrapper{
+	display: none;
+}
+.login-form>.login-wrapper.active{
+	display: block;
+}
+.login-form>.login-wrapper>.login-write div {
+	height: 0.94rem;
+	border-bottom: 0.01rem solid #ccc;
+}
+.login-form>.login-wrapper>.login-write input {
+	outline: none;
+	border: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 0.26rem;
+}
+.login-form>.login-wrapper>.login-write>.input-pwd {
+	margin-top: 0.1rem;
+}
+.input-code{
+	display: flex;
+}
+.input-code>input{
+	flex-grow: 1;
+}
+.input-code>span.code{
+	width: 2rem;
+	line-height: 0.94rem;
+	text-align: center;
+}
+button {
+	width: 100%;
+	height: 0.96rem;
+	border: 0;
+	margin-top: 0.3rem;
+	font-size: 0.36rem;
+	outline: none;
+	color: white;
+}
+.login-option {
+	margin-top: 0.16rem;
+	display: flex;
+}
+.login-option>span {
+	font-size: 0.26rem;
+	color: #999;
+	flex-shrink: 0;
+	line-height: 0.26rem;
+	position: relative;
+}
+.login-option>span>i {
+	display: inline-block;
+	width: 0.32rem;
+	height: 0.32rem;
+	border: 1px solid #333;
+	margin-right: 0.16rem;
+}
+.login-option>span>i>img {
+	width: 100%;
+}
+.login-option>span>i.active {
+	border: 1px solid #FF464e;
+	background-color: #FF464e;
+}
+.login-option>p {
+	flex-grow: 1;
+	color: #999;
+	line-height: 0.36rem;
+	text-align: right;
+	font-size: 0.26rem;
+}
+.login-other {
+	margin-top: 0.8rem;
+}
+.login-other>h3 {
+	color: #999;
+	text-align: center;
+	font-size: 0.24rem;
+}
+.login-other>.other-ways {
+	display: flex;
+	margin: 0.8rem 0;
+}
+.login-other>.other-ways>a {
+	flex-grow: 1;
+	text-align: center;
+}
+.footer {
+	border-top: 1px solid #ccc;
+	padding: 0.4rem 0;
+}
+.footer>ul {
+	display: flex;
+}
+.footer>ul>li {
+	flex-grow: 1;
+	display: flex;
+}
+.footer>ul>li>span {
+	color: #999;
+	line-height: 0.44rem;
+	margin-left: 0.1rem;
+}

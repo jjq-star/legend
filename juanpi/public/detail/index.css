@@ -1,0 +1,325 @@
+.overlay{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.3);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	display: none;
+}
+.page-wrapper{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding-bottom: 1.2rem;
+}
+/* 页头开始 */
+.header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	height: 1rem;
+	line-height: 1rem;
+	background-color: transparent;
+	box-sizing: border-box;
+	padding: 0 0.2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header>a{
+	width: 0.6rem;
+	color: white;
+	font-size: 0.4rem;
+}
+.header>button{
+	width: 0.6rem;
+	height: 0.6rem;
+	background-color: rgba(0,0,0,0.3);
+	color: white;
+	font-size: 0.5rem;
+	border: 0;
+	border-radius: 50%;
+	outline: none;
+}
+.header>.more-popup{
+	position: absolute;
+	top: 0.9rem;
+	right: 0;
+	width: 1.6rem;
+	height: 2rem;
+	background-color: rgba(0,0,0,0.3);
+	padding: 0.1rem;
+	display: none;
+}
+.header>.more-popup.active{
+	display: block;
+}
+.header>.more-popup>ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.header>.more-popup>ul>li{
+	width: 100%;
+	flex-grow: 1;
+	line-height: 0.4rem;
+	margin-bottom: 0.2rem;
+	border-bottom: 1px solid #ccc;
+}
+.header>.more-popup>ul>li>a{
+	color: white;
+	font-size: 0.32rem;
+}
+/* 页头结束 */
+/* 内容开始 */
+.content{}
+.content>.banner{}
+.content>.banner>ul{
+	display: flex;
+	overflow: hidden;
+	touch-action: pan-x;
+}
+.content>.banner>ul>li{
+	flex-grow: 1;
+}
+.content>.banner>ul>li>img{
+	width: 100%;
+}
+.content>.particular{
+	padding: 0.2rem;
+}
+.content>.particular>em.price{
+	font-style: normal;
+	font-size: 0.38rem;
+	color: #FF464E;
+}
+.content>.particular>span.sale{
+	float: right;
+	font-size: 0.28rem;
+}
+.content>.particular>h3.title{
+	font-size: 0.4rem;
+	color: #333;
+	font-weight: 400;
+	margin-top: 0.2rem;
+}
+/* 内容结束 */
+.other{
+	background-color: #f4f4f4;
+}
+.other>.service{
+	display: flex;
+	height: 1rem;
+	
+}
+.other>.service>ul{
+	flex-grow: 1;
+	display: flex;
+}
+.other>.service>ul>li{
+	flex-grow: 1;
+	flex-basis: 0;
+	text-align: center;
+	line-height: 1rem;
+	font-size: 0.3rem;
+	color: #333;
+}
+.other>.service>span{
+	width: 0.8rem;
+	flex-shrink: 0;
+	font-size: 0.5rem;
+	line-height: 1rem;
+	text-align: center;
+	color: #999;
+}
+/* 页脚开始 */
+.footer{
+	display: flex;
+	width: 100%;
+	height: 0.96rem;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.footer>ul{
+	flex-grow: 1;
+	display: flex;
+}
+.footer>ul>li{
+	flex-grow: 1;
+	flex-basis: 0;
+	border-right: 1px solid #999;
+}
+.footer>ul>li>a{
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.footer>ul>li>a>i{
+	font-size: 0.4rem;
+	color: #999;
+}
+.footer>ul>li:nth-child(2)>a>i{
+	position: relative;
+}
+.footer>ul>li:nth-child(2)>a>i>em{
+	display: inline-block;
+	position: absolute;
+	top: -0.1rem;
+	right: -0.2rem;
+	width: 0.36rem;
+	height: 0.36rem;
+	line-height: 0.36rem;
+	text-align: center;
+	border-radius: 0.16rem;
+	background-color: #FF464E;
+	color: white;
+	font-size: 0.24rem;
+	font-style: normal;
+	/* opacity: 0; */
+}
+.footer>ul>li:nth-child(2)>a>i>em.active{
+	opacity: 1;
+}
+.footer>ul>li>a>span{
+	color: #333;
+	margin-top: 0.1rem;
+}
+.footer>span.shopping{
+	flex-shrink: 0;
+	width: 2rem;
+	height: 100%;
+	text-align: center;
+	line-height: 0.96rem;
+	color: #333;
+	font-size: 0.28rem;
+}
+.footer>button.btn-addproduct{
+	flex-shrink: 0;
+	width: 2rem;
+	height: 100%;
+	border: 0;
+	background-color: #FF464E;
+	color: white;
+	font-size: 0.24rem;
+}
+/* 页脚结束 */
+.popup{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 101;
+	background-color: white;
+	width: 100%;
+	height: 6.5rem;
+	display: none;
+}
+.popup>.top{
+	display: flex;
+}
+.popup>.top>img{
+	flex-shrink: 0;
+	width: 2rem;
+	height: 2rem;
+	margin-top: -0.4rem;
+	margin-left: 0.2rem;
+}
+.popup>.top>span{
+	flex-grow: 1;
+	font-size: 0.4rem;
+	color: #FF464E;
+	padding: 0.3rem;
+}
+.popup>.top>i{
+	width: 0.6rem;
+	flex-shrink: 0;
+	font-size: 0.3rem;
+	padding: 0.2rem;
+	text-align: right;
+}
+.popup>.center{
+	padding: 0.3rem 0.2rem;
+}
+.popup>.center>h4{
+	font-size: 0.34rem;
+	font-weight: 400;
+	margin-bottom: 0.2rem;
+}
+.popup>.center>ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+.popup>.center>ul>li{
+	width: 20%;
+	height: 0.6rem;
+	margin: 0.1rem 0.3rem;
+	border: 1px solid #666;
+	text-align: center;
+	line-height: 0.6rem;
+	font-size: 0.3rem;
+	color: #333;
+}
+.popup>.center>ul>li.active{
+	background-color: #FF464E;
+	border: 1px solid white;
+	color: white;
+}
+.popup>.foot{
+	padding: 0 0.2rem;
+}
+.popup>.foot>span{
+	font-size: 0.3rem;
+}
+.popup>.foot>div{
+	float: right;
+	height: 0.6rem;
+	line-height: 0.6rem;
+}
+.popup>.foot>div>em{
+	display: inline-block;
+	width: 0.4rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	text-align: center;
+	font-size: 0.3rem;
+	font-style: normal;
+}
+.popup>.foot>div>span{
+	display: inline-block;
+	width: 0.4rem;
+	height: 0.4rem;
+	text-align: center;
+	font-size: 0.3rem;
+	line-height: 0.4rem;
+	background-color: #ddd;
+}
+.popup>button{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1rem;
+	border: 0;
+	outline: none;
+	background-color: #FF464E;
+	font-size: 0.36rem;
+	color: white;
+}
+p.info{
+	position: fixed;
+	bottom: 2rem;
+	left: 50%;
+	z-index: 300;
+	transform: translate(-50%, -50%);
+	font-size: 0.32rem;
+	padding: 0 0.2rem;
+	background-color: #FF464E;
+	color: white;
+}

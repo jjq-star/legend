@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="../assets/webREM.js"></script>
+		<link rel="stylesheet" href="/assets/reset.css">
+		<link rel="stylesheet" href="/nav/iconfont.css">
+		<link rel="stylesheet" href="/list/iconfont.css">
+		<link rel="stylesheet" href="/detail/iconfont.css">
+		<link rel="stylesheet" href="iconfont.css">
+		<link rel="stylesheet" href="index.css">
+		<title>购物车</title>
+	</head>
+	<body>
+		<div class="page-wrapper">
+			<div class="header">
+				<span class="iconfont icon-back" onclick="history.back()"></span>
+				<h3>购物车</h3>
+				<button type="button" class="btn-edit-toggle">编辑</button>
+			</div>
+			<div class="content">
+				<ul class="cart-list"></ul>
+				<div class="null">
+                    <img src="images/empty-cart.png" />
+                    <p>购物车中还没有商品哦...</p>
+					<a href="/home/index.html"><button>去逛逛</button></a>
+                </div>
+			</div>
+			<div class="footer normal clearfix active">
+				<div>
+					<i class="checkbox checked iconfont icon-select" data-group='normal'></i>
+					<span class="all">全选</span>
+				</div>
+				<span class="shopping-cart iconfont icon-cart"><em class="numbers"></em></span>
+				<button class="btn-settlement">去结算</button>
+				<p>合计:￥<em class="total"></em></p>	
+			</div>
+			<div class="footer edit">
+				<div>
+					<i class="checkbox iconfont icon-select" data-group='edit'></i>
+					<span class="all">全选</span>
+				</div>
+				<button class="btn-delete">删除（<em class="delete"></em>）</button>
+			</div>
+			<iframe src="../nav/index.html" frameborder="0"></iframe>
+		</div>
+		<script src="/assets/jquery-3.4.1.min.js"></script>
+		<script src="../assets/http.js" type="text/javascript" charset="utf-8"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
