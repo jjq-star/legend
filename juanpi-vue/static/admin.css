@@ -1,0 +1,22 @@
+* { padding: 0 ; margin: 0 }
+ul { list-style: none; }
+button{
+	outline: none;
+	border: none
+}
+a { text-decoration: none; color:  black;}
+.clearfix:after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	clear: both;
+}
+.ellipsis {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+*,*:before,*:after { max-height: 100000px; }
+html,body { width: 100%; height: 100%;}
+body { font-size: 0.24rem }
